@@ -278,7 +278,7 @@ Gandit原理
 ----------------
 Gandit流程图：  
 
-![](http://gitlab.intra.nsfocus.com/gaoruiqiang/Gandit/raw/master/tree.png)  
+![](https://github.com/Gingsguard/Gandit/blob/master/tree.png)  
 
 Gandit是对Bandit的二次开发。具体的检测流程如下：  
    - 首先它会对要检测的python代码进行ast抽象语法树处理.
