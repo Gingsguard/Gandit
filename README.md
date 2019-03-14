@@ -212,10 +212,10 @@ To write a test:
         print "severity_args:"+str(context.Function_dangerous_parameters)
         print "Show_all_call_args:"+str(context.Show_all_call_args)
         print "Call finish+++++"
-        if "popen" in context.call_function_name:
-            for call_arg in context.call_args:
+        if "eval" == context.call_function_name:
+            for call_arg in context.Call_dangerous_parameters:
                 if call_arg in context.Function_dangerous_parameters:
-                    pass
+                    print("eval warning")
 
 
 
@@ -231,7 +231,7 @@ context属性如下：
 			
 			4.context.call_function_def: 这是一个ast节点类型的数据，它存放着定义这个call的函数.  
 			
-			5.context.call_function_name: 此节点的函数名(eg:popen).  
+			5.context.call_function_name: 此节点的函数名(eg:eval).  
 			
 			6.context.call_function_name_qual: 此节点的完整调用名(eg:os.popen).  
 			
